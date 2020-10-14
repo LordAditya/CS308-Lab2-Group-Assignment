@@ -8,6 +8,8 @@
 /* veclib.h */
 
 
+///////////////  Some Initial Changes for understanding workflow ////////////////////////////
+
 #define DIM 4
 // vector type
 typedef vector float[DIM];
