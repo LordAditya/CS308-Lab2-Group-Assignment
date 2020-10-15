@@ -7,11 +7,11 @@ typedef vector float[DIM];
 // print vector
 void print(vector vec_a);
 // vector addition
-vector add(vector vec_a, vector vec_b, vector *vec_c);
+void add(vector vec_a, vector vec_b, vector *vec_c);
 // elementwise product
-vector eleProd(vector vec_a, vector vec_b, vector *vec_c);
+void eleProd(vector vec_a, vector vec_b, vector *vec_c);
 // difference of two vectors
-vector diff(vector vec_a, vector vec_b, vector *vec_c);
+void diff(vector vec_a, vector vec_b, vector *vec_c);
 // dot product
 float dotprod(vector vec_a, vector vec_b);
 // add other functions as needed
