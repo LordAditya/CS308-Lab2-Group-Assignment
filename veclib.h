@@ -1,4 +1,5 @@
 #include<math.h>
+#include<stdio.h>
 
 #define DIM 4
 // vector type
@@ -6,7 +7,7 @@ typedef float vector[DIM];
 
 // functions
 // print vector
-void print(vector vec_a);
+void print(vector *vec_a);
 // vector addition
 void add(vector vec_a, vector vec_b, vector *vec_c);
 // elementwise product
@@ -23,14 +24,10 @@ float vec_angle(vector vec_a, vector vec_b);
 
 //////////////////////////////////////////////////////////
 
-void print(vector vec_a) {
-	printf("[");
-	for (int i=0;i<DIM;i++)
-		printf("%f ",vec_a[i]);
-	printf("]");
-}
-//////////////////////////////////////////////////////////
 
+
+//////////////////////////////////////////////////////////
+/*
 float vecmod(vector vec_a){
 	float a = 0;
 	for (int i=0;i<DIM;i++)
@@ -39,16 +36,18 @@ float vecmod(vector vec_a){
 }
 
 //////////////////////////////////////////////////////////
-
+*/
+/*
 float vec_angle(vector vec_a, vector vec_b){
-	float f = float dotprod(vec_a, vec_b), f1 = vecmod(vec_a), f2 = vecmod(vec_b);
+	float f = dotprod(vec_a, vec_b), f1 = vecmod(vec_a), f2 = vecmod(vec_b);
 	if(f1 != 0 && f2 != 0){
 		return f/(f1*f2);
 	}
 	else{
 		printf("Error Message: zero vector does not have defined angle with any vector");
-		exit(-1);
+		return 0.0;
 	}
 }
+*/
 
 ////////////////////////////////////////////////////////////
