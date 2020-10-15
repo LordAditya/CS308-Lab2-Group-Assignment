@@ -1,7 +1,6 @@
 /* vecmain.c*/
 // main program
 
-#include<stdio.h>
 #include "veclib.h"
 
 int main() {
@@ -17,8 +16,10 @@ int main() {
 	for(int j = 0 ; j < DIM ; j++){
 		scanf("%f", &vecB[j]);
 	}
+  
 	print(&vecA);
 	print(&vecB);
+  
 	printf("Printing vector sum\n");
 	add(vecA,vecB,&vecC);
 	print(&vecC);
