@@ -1,6 +1,7 @@
 /* vecmain.c*/
 // main program
 
+#include<stdio.h>
 #include "veclib.h"
 int main() {
 	vector vecA, vecB, vecC;

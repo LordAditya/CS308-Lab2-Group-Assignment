@@ -1,7 +1,8 @@
+#include<math.h>
 
 #define DIM 4
 // vector type
-typedef vector float[DIM];
+typedef float vector[DIM];
 
 // functions
 // print vector
@@ -24,7 +25,7 @@ float vec_angle(vector vec_a, vector vec_b);
 
 void print(vector vec_a) {
 	printf("[");
-	for (i=0;i<DIM;i++)
+	for (int i=0;i<DIM;i++)
 		printf("%f ",vec_a[i]);
 	printf("]");
 }
@@ -32,7 +33,7 @@ void print(vector vec_a) {
 
 float vecmod(vector vec_a){
 	float a = 0;
-	for (i=0;i<DIM;i++)
+	for (int i=0;i<DIM;i++)
 		a += (vec_a[i]*vec_a[i]);
 	return sqrt(a);
 }
