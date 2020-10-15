@@ -1,7 +1,6 @@
 /* vecmain.c*/
 // main program
 
-#include<stdio.h>
 #include "veclib.h"
 int main() {
 	vector vecA, vecB, vecC;
@@ -18,15 +17,15 @@ int main() {
 	}
 
 	printf("Printing vector sum\n");
-	add(vecA,vecB,&vecC);
+	add(vecA,vecB,vecC);
 	print(vecC);
 
 	printf("Printing vector-element wise product, vecA*vecB\n");
-	eleProd(vecA,vecB,&vecC);
+	eleProd(vecA,vecB,vecC);
 	print(vecC);
 	
 	printf("Printing vector-difference, vecA-vecB\n");
-	diff(vecA, vecB, &vecC);
+	diff(vecA, vecB, vecC);
 	print(vecC);
 
 	printf("Printing dot-product, vecA.vecB\n");
