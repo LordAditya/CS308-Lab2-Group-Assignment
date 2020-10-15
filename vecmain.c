@@ -12,7 +12,7 @@ int main() {
 		scanf("%f", &vecA[j]);
 	}
 
-	printf("Input vector A (vecA) :\n");
+	printf("Input vector B (vecB) :\n");
 	for(int j = 0 ; j < DIM ; j++){
 		scanf("%f", &vecB[j]);
 	}
@@ -40,4 +40,3 @@ int main() {
 
 } // end main
 //////////////////////////////////////////////////////////
-
