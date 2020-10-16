@@ -37,7 +37,7 @@ int main() {
 	printf("Printing dot-product, vecA.vecB\n");
 	printf("%f\n\n",dotprod(vecA, vecB));
 
-	printf("Printing angle between vecA and vecB, vecA-vecB\n");
+	printf("Printing angle between vecA and vecB\n");
 	printf("%f\n\n",vec_angle(vecA, vecB));
 
 	// print and display other outputs
