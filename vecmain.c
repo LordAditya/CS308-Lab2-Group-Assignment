@@ -3,6 +3,13 @@
 
 #include "veclib.h"
 
+void print(vector vec_a) {
+	printf("[");
+	for (int i=0;i<DIM;i++)
+		printf("%f ",vec_a[i]);
+	printf("]\n\n");
+}
+
 int main() {
 	vector vecA, vecB, vecC;
 	// read vectors vecA, vecB as input
@@ -35,12 +42,13 @@ int main() {
 	printf("Printing dot-product, vecA.vecB\n");
 	printf("%f\n\n",dotprod(vecA, vecB));
 
-	//printf("Printing angle between vecA and vecB\n");
-	//printf("%f radians\n\n",vec_angle(vecA, vecB));
+	printf("Printing angle between vecA and vecB, vecA-vecB\n");
+	printf("%f",vec_angle(vecA, vecB));
 
 	// print and display other outputs
 	// product, difference, dot product, angle
 
+	return 0;
 } // end main
 
-//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////
