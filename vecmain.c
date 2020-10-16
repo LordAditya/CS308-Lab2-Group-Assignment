@@ -16,13 +16,16 @@ int main() {
 	for(int j = 0 ; j < DIM ; j++){
 		scanf("%f", &vecB[j]);
 	}
+
 	printf("\nPrinting vector A (vecA)\n");
 	print(vecA);
 
 	printf("\nPrinting vector B (vecB)\n");
+
 	print(vecB);
   
-	printf("Printing vector sum\n");
+
+	printf("Printing vector sum, VecA + VecB: \n");
 	add(vecA,vecB,vecC);
 	print(vecC);
 
@@ -30,15 +33,18 @@ int main() {
 	eleProd(vecA,vecB,vecC);
 	print(vecC);
 	
+
 	printf("Printing vector-difference, vecA-vecB\n");
 	diff(vecA, vecB, vecC);
 	print(vecC);
 
-	printf("Printing dot-product, vecA.vecB\n");
+
+	printf("Printing dot-product, vecA.vecB:\n");
 	printf("%f\n\n",dotprod(vecA, vecB));
 
-	printf("Printing angle between vecA and vecB\n");
-	printf("%f\n\n",vec_angle(vecA, vecB));
+	printf("Printing angle between vecA and vecB: \n");
+	printf("%f\n",vec_angle(vecA, vecB));
+
 
 	// print and display other outputs
 	// product, difference, dot product, angle
