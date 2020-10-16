@@ -26,4 +26,6 @@ float vec_angle(vector vec_a,vector vec_b)
 	temp= temp/mag_b;
 	if(temp>1)temp=1;
 	return acosf(temp);
+
 } 
+
