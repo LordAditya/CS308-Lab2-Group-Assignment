@@ -3,7 +3,8 @@
 This is the repository for our Lab2 PartB Group Assignment. We have made a library for performing operations on R^4 vectors which can be modified to any n-dim vectors also.
 
 ## Compiling the Code
-- run: gcc -o abc vecmain.c vecadd.c vecnorm.c vecprod.c vecdot.c vecangle.c
+- run ```make``` to create the executable file ```vecMain```
+- run ```./vecMain``` to run the code
 
 ## Give Input
 Example
