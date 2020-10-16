@@ -23,4 +23,13 @@ float dotprod(vector vec_a, vector vec_b);
 // angle between 2 vectors
 float vec_angle(vector vec_a, vector vec_b);
 
+
+void print(vector vec_a) {
+	printf("[");
+	for (int i=0;i<DIM;i++)
+		printf("%f ",vec_a[i]);
+	printf("]\n\n");
+}
+
+
 #endif
