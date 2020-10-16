@@ -7,7 +7,7 @@ typedef float vector[DIM];
 
 // functions
 // print vector
-void print(vector *vec_a);
+static inline void print(vector vec_a);
 // vector addition
 void add(vector vec_a, vector vec_b, vector vec_c);
 // elementwise product
@@ -24,39 +24,16 @@ static inline float vec_angle(vector vec_a, vector vec_b);
 
 //////////////////////////////////////////////////////////
 
-/*
+
 
 //////////////////////////////////////////////////////////
 
-static inline void print(vector vec_a) {
-	printf("[");
+void print(vector vec_a) {
+	printf("[ ");
 	for (int i=0;i<DIM;i++)
 		printf("%f ",vec_a[i]);
-	printf("]");
-}
-//////////////////////////////////////////////////////////
-
-static inline float vecmod(vector vec_a){
-	float a = 0;
-	for (int i=0;i<DIM;i++)
-		a += (vec_a[i]*vec_a[i]);
-	return sqrt(a);
+	printf("]\n\n");
 }
 
-//////////////////////////////////////////////////////////
 
 
-static inline float vec_angle(vector vec_a, vector vec_b){
-	float f = float dotprod(vec_a, vec_b), f1 = vecmod(vec_a), f2 = vecmod(vec_b);
-	if(f1 != 0 && f2 != 0){
-		return f/(f1*f2);
-	}
-	else{
-		printf("Error Message: zero vector does not have defined angle with any vector");
-		return 0.0;
-	}
-}
-*/
-
-////////////////////////////////////////////////////////////
-*/
