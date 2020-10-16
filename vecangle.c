@@ -1,4 +1,3 @@
-// Both vector of the same size
 #include "veclib.h"
 
 float dot_Prod(vector vec_a, vector vec_b){
@@ -27,7 +26,3 @@ float vec_angle(vector vec_a,vector vec_b)
 	temp= temp/mag_b;
 	return acosf(temp);
 } 
-// void helloworld()
-// {
-// 	printf("Hello I am God ");
-// } 
