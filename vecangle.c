@@ -26,8 +26,4 @@ float vec_angle(vector vec_a,vector vec_b)
 	float temp= dot/mag_a;
 	temp= temp/mag_b;
 	return acosf(temp);
-} 
-// void helloworld()
-// {
-// 	printf("Hello I am God ");
-// } 
+}
